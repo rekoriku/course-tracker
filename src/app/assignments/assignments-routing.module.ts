@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AssignmentComponent } from './assignment/assignment.component';
 
 const routes: Routes = [
-  { path: '', component: AssignmentComponent }
-  //{ path: 'course/:id', component: CourseComponent }
+  { path: '', component: AssignmentComponent },
+  { path: 'assignment/:id', component: AssignmentComponent }
 ];
 
 @NgModule({

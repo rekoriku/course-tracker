@@ -6,9 +6,9 @@ import { CourseComponent } from './course/course.component';
 
 const routes: Routes = [
   { path: '', component: CourseComponent },
-  { path: 'course/:id', component: CourseComponent },
+  //{ path: 'course/:id', component: CourseComponent },
   {
-    path: 'course/:id/assignments',
+    path: 'course/:id',
     loadChildren: () => import('../assignments/assignments.module').then(m => m.AssignmentsModule)
   }
 ];

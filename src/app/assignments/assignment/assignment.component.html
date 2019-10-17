@@ -1,4 +1,8 @@
-<p>assignment works!</p>
-<p>assignment works!</p>
-<p>assignment works!</p>
-<p>assignment works!</p>
+<h2>Assignment List</h2>
+<ul class="random">
+  <li *ngFor="let assignment of assignments">
+      <a routerLink="/assignment/{{assignment.id}}"> 
+      <span class="badge" >{{assignment.id}}</span> {{assignment.name}}
+     </a>  
+  </li>
+</ul>
